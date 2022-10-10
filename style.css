@@ -1,0 +1,117 @@
+* {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  color: white;
+}
+body {
+  background: radial-gradient(
+    circle at -8.9% 51.2%,
+    rgb(255, 124, 0) 0%,
+    rgb(255, 124, 0) 15.9%,
+    rgb(255, 163, 77) 15.9%,
+    rgb(255, 163, 77) 24.4%,
+    rgb(19, 30, 37) 24.5%,
+    rgb(19, 30, 37) 66%
+  );
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+h1 {
+  color: #5fbaa7;
+}
+header img {
+  height: 100px;
+  width: 100px;
+  filter: drop-shadow(0px 0px 5px #5fbaa7);
+  animation: rotate 2s infinite linear;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.container {
+  margin: 0 auto;
+  padding: 50px 10px;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 30px;
+}
+
+input,
+select {
+  text-align: end;
+  border: none;
+  padding: 10px;
+  background-color: transparent;
+  font-size: 15px;
+}
+input:focus,
+select:focus {
+  outline: none;
+}
+
+.currency {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-left: 3px solid #5fbaa7;
+}
+
+.swap-rate-container {
+  display: flex;
+  gap: 80px;
+}
+
+.btn {
+  border-radius: 5px;
+  padding: 5px 10px;
+  background-color: #5fbaa7;
+  color: white;
+  cursor: pointer;
+  transition: all 0.5s;
+  border: 2px solid transparent;
+}
+.btn:hover {
+  transform: scale(1.1);
+  color: #5fbaa7;
+  background-color: transparent;
+
+  border: 2px solid #5fbaa7;
+}
+.rate {
+  color: #5fbaa7;
+}
+select option {
+  color: black;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 20px 10px;
+    gap: 15px;
+  }
+  header img {
+    height: 80px;
+    width: 80px;
+  }
+  .btn:hover {
+    transform: unset;
+    color: white;
+    background-color: #5fbaa7;
+
+    border: 2px solid transparent;
+  }
+  .btn {
+    transition: all 0.1s;
+  }
+}
