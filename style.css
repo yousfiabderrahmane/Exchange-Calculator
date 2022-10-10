@@ -73,16 +73,20 @@ select:focus {
 }
 
 .btn {
-  border: 2px solid black;
   border-radius: 5px;
   padding: 5px 10px;
   background-color: #5fbaa7;
   color: white;
   cursor: pointer;
   transition: all 0.5s;
+  border: 2px solid transparent;
 }
 .btn:hover {
   transform: scale(1.1);
+  color: #5fbaa7;
+  background-color: transparent;
+
+  border: 2px solid #5fbaa7;
 }
 .rate {
   color: #5fbaa7;
