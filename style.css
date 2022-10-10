@@ -104,4 +104,14 @@ select option {
     height: 80px;
     width: 80px;
   }
+  .btn:hover {
+    transform: unset;
+    color: white;
+    background-color: #5fbaa7;
+
+    border: 2px solid transparent;
+  }
+  .btn {
+    transition: all 0.1s;
+  }
 }
