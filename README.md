@@ -1,6 +1,6 @@
 ## Welcome To iExchange :
 
-This is a Fully Responsive Exchange Rate Calculator website, created Javascript, that you can check now on [iExchange.app](https://iexchangecalculator.netlify.app/) <=
+This is a Fully Responsive Exchange Rate Calculator website, created with Javascript, that you can check now on [iExchange.app](https://iexchangecalculator.netlify.app/) <=
 
 ## Overview :
 
